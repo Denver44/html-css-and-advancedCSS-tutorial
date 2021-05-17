@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container {
+            /* 1. We have Initlaize a display grid here. */
+            display: grid;
+            /* place-items: center; */
+            grid-template-rows: 1fr 4fr 1fr;
+            /* Here By default all othwer will be 1fr */
+            grid-auto-rows: 2fr;
+            /* So other will be automatically 2fr */
+            grid-template-columns: .5fr 2fr 1fr;
+            grid-gap: 1rem;
+
+        }
+
+        .box {
+            background-color: yellow;
+            border: 2px solid black;
+            /* width: 100px; */
+            /* height: 100px; */
+            /* margin: 5px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+
+    </div>
+</body>
+
+</html>

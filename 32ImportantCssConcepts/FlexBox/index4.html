@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid goldenrod;
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        .item {
+            background-color: tomato;
+            margin: 10px;
+            height: 50px;
+            width: 150px;
+            padding-left: 20px;
+            border: 2px solid black;
+        }
+
+        #item-1 {
+            /* order: 2; */
+            /* Whose order is High later it wil be shown */
+            /* flex-grow: 2; */
+            /* It will grow as the size increase */
+            /* flex-shrink: 10; */
+            /* It will shrink mre than anyother */
+            flex-basis: 320px;
+            /* At time of flexdirection row it control width */
+            /* At time of flexdirection column it control height */
+            align-self: flex-end;
+        }
+
+        #item-2 {
+            /* order: 1; */
+            /* flex-grow: 2; */
+            align-self: flex-end;
+        }
+
+        #item-3 {
+            /* order: 0; */
+            align-self: center;
+            /* This way we can align items  */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox item properties</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+
+    </div>
+</body>
+
+</html>
