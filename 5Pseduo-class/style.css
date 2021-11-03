@@ -1,0 +1,59 @@
+.container {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:active {
+  background-color: green;
+}
+
+a:visited {
+  background-color: #ff0d0d;
+}
+
+a:hover {
+  color: magenta;
+}
+
+.btn {
+  background-color: lightseagreen;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+li:first-child {
+  color: red;
+  font-size: 22px;
+}
+
+li:last-child {
+  color: green;
+}
+
+li:nth-child(3) {
+  color: yellow;
+  font-size: 26px;
+}
+
+.container ul li:nth-child(4) {
+  font-style: italic;
+  color: pink;
+  font-size: 24px;
+}
+.container ol li:nth-child(6) {
+  font-style: italic;
+  color: pink;
+  font-size: 44px;
+  text-transform: lowercase;
+}
