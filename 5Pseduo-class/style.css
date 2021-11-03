@@ -1,37 +1,3 @@
-.container {
-  padding: 10px;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: yellow;
-}
-
-a:active {
-  background-color: green;
-}
-
-a:visited {
-  background-color: #ff0d0d;
-}
-
-a:hover {
-  color: magenta;
-}
-
-.btn {
-  background-color: lightseagreen;
-  padding: 6px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 4px;
-}
-
 li:first-child {
   color: red;
   font-size: 22px;
