@@ -23,3 +23,59 @@ li:nth-child(3) {
   font-size: 44px;
   text-transform: lowercase;
 }
+
+.second-container {
+  display: block;
+  width: 233px;
+  margin: auto;
+}
+
+input {
+  display: block;
+}
+
+/* this is set for input whose attritube type is text */
+input[type="text"] {
+  padding: 23px;
+  border: 2px solid red;
+}
+
+/* this is set for anchor tag whose target is set. */
+a[target] {
+  font-size: 44px;
+  color: violet;
+}
+
+/* this is set for anchor tag whose target is _self only. */
+a[target="_self"] {
+  font-size: 14px;
+  color: rgb(13, 22, 151);
+}
+
+input[type="email"] {
+  color: yellow;
+  border: 4px solid black;
+}
+
+/* This will apply css for third child */
+/* li:nth-child(3){
+color: cyan;
+}
+
+li:nth-child(2n+0){
+color: red;
+} */
+
+li:nth-child(3n + 3) {
+  color: red;
+}
+
+/* Odd child */
+/* li:nth-child(odd){
+background-color: yellow;
+} */
+
+/* Even child */
+li:nth-child(even) {
+  background-color: yellow;
+}
