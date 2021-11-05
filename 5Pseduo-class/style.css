@@ -24,17 +24,16 @@ li:nth-child(3) {
   text-transform: lowercase;
 }
 
-.second-container {
-  display: block;
-  width: 233px;
-  margin: auto;
-}
-
 input {
   display: block;
+  margin: 8px 0;
 }
 
-/* this is set for input whose attritube type is text */
+a:link {
+  display: block;
+}
+
+/* this is set for input whose attribute type is text */
 input[type="text"] {
   padding: 23px;
   border: 2px solid red;
@@ -55,27 +54,4 @@ a[target="_self"] {
 input[type="email"] {
   color: yellow;
   border: 4px solid black;
-}
-
-/* This will apply css for third child */
-/* li:nth-child(3){
-color: cyan;
-}
-
-li:nth-child(2n+0){
-color: red;
-} */
-
-li:nth-child(3n + 3) {
-  color: red;
-}
-
-/* Odd child */
-/* li:nth-child(odd){
-background-color: yellow;
-} */
-
-/* Even child */
-li:nth-child(even) {
-  background-color: yellow;
 }
