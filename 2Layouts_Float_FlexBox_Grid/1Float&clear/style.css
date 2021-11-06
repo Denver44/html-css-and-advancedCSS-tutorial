@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid rgb(0, 85, 255);
+  color: rgb(0, 238, 251);
+  background-color: blueviolet;
+}
+
+article {
+  width: 825px;
+  border: 2px solid rgb(0, 149, 255);
+  float: left;
+  margin-bottom: 40px;
+}
+
+aside {
+  width: 300px;
+  border: 2px solid rgb(206, 47, 174);
+  float: right;
+}
+
+footer {
+  clear: both;
+  height: 40px;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.item {
+  margin: 5px;
+  padding: 12px;
+  background: rgb(0, 188, 245, 0.2);
+}
+
+#computer {
+  float: left;
+  width: 48%;
+}
+
+#fruit {
+  float: right;
+  width: 48%;
+}
+
+#stationary {
+  clear: both;
+  width: 100%;
+}
