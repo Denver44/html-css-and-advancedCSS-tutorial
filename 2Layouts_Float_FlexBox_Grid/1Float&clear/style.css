@@ -69,3 +69,23 @@ footer {
   clear: both;
   width: 100%;
 }
+
+/* To solve the height issue we actually use clear. */
+/* use pseudo class to solve the height issue is good don't use the empty div. */
+
+/* 
+ This is wrong practice crating a empty div and using css on it. 
+.clear{
+  clear: both;
+} */
+
+/* 
+This approach is good.
+nav::after {
+  content: "";
+  clear: both;
+  display: block;  pseudo class is inline or inline block element 
+} 
+*/
+
+/* In box-sizing: border-box; actually the content area height and width will be decrease but the height and width which we have given it will be fixed. */
