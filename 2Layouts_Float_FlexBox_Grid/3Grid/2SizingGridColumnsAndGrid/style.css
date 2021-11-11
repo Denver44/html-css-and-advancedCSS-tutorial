@@ -9,23 +9,27 @@
   padding: 25px;
   margin: 25px;
   height: 600px;
+  width: 600px;
   display: grid;
 
   /* grid-template-columns: 300px 100px 500px 400px; */
+
   /* We use fr (fractional row which is use more than px */
   /* grid-template-columns: 1fr 2fr 1fr; */
+
   /* Repeat properties for only col */
   /* grid-template-columns: repeat(2, 2fr); */
-  grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
+  /* grid-template-columns: repeat(2, 1fr) repeat(1, 50%); */
+
+  /* It will take exact 50% width of container if we use percentage. but remember don't use box-sizing: border-box */
+  grid-template-columns: 1fr 50% 1fr;
 
   /* grid-template-rows: 200px 250px 150px; */
   /* grid-template-rows: 1fr 2fr 1fr; */
   grid-template-rows: 1fr 2fr auto; /* As we have use auto it means it will take that much which is required. */
   /* grid-auto-rows: 2fr; */
 
-  /*3. to give the gap between grid */
-  column-gap: 15px;
-  row-gap: 15px;
+  gap: 10px;
 }
 
 .item {
