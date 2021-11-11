@@ -4,23 +4,20 @@
 }
 
 .container {
-  /* 1. We have Initlaize a display grid here. */
-  display: grid;
+  width: 1200px;
+  padding: 25px;
+  margin: 30px auto;
+  border: 2px solid black;
+  background-color: lightgray;
 
-  /* Here we create a 4 columns with respectively size below mentioned  */
-  grid-template-columns: 300px 100px 500px 400px;
-
-  /* Here we have created a row in which first row has size of 100px second row will have size of 250px and third row siz eof 150px */
-  grid-template-rows: 200px 250px 150px;
+  display: grid; /* We have Initialize a display grid here. */
+  grid-template-columns: 300px 100px 500px; /* Here we create a 4 columns with respectively size below mentioned  */
+  grid-template-rows: 100px 75px 50px; /* Here we have created a row in which first row has size of 100px second row will have size of 250px and third row siz eof 150px */
 
   /* It will set the Margin Automatically */
-
   /* gap: 30px; */
   column-gap: 30px;
   row-gap: 15px;
-
-  border: 2px solid black;
-  padding: 25px;
 }
 
 .item {
@@ -37,7 +34,7 @@
 }
 .item-3 {
   background-color: yellow;
-  height: 150px;
+  /* height: 150px; */
 }
 .item-4 {
   background-color: blue;
