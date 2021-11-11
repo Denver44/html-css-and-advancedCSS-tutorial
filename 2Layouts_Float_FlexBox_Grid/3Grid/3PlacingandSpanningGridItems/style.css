@@ -8,22 +8,11 @@
   border: 2px solid black;
   padding: 25px;
   margin: 25px;
-  height: 600px;
+  height: 400px;
+  width: 600px;
   display: grid;
-
-  /* grid-template-columns: 300px 100px 500px 400px; */
-  /* We use fr (fractional row which is use more than px */
-  /* grid-template-columns: 1fr 2fr 1fr; */
-  /* Repeat properties for only col */
-  /* grid-template-columns: repeat(2, 2fr); */
-  grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
-
-  /* grid-template-rows: 200px 250px 150px; */
-  /* grid-template-rows: 1fr 2fr 1fr; */
-  grid-template-rows: 1fr 2fr auto; /* As we have use auto it means it will take that much which is required. */
-  /* grid-auto-rows: 2fr; */
-
-  /*3. to give the gap between grid */
+  grid-template-columns: repeat(2, 2fr) repeat(1, 3fr);
+  grid-template-rows: 1fr 2fr auto;
   column-gap: 15px;
   row-gap: 15px;
 }
@@ -53,33 +42,39 @@
 .item-6 {
   background-color: gold;
 }
-.item-7 {
-  background-color: black;
-  color: white;
-}
-.item-8 {
-  background-color: royalblue;
-}
 
-.item-8 {
+.item-6 {
   /* use inspect here Chrome DEV Tools */
 
-  /* Mens start on first line and ends on 3rd line */
-
-  /* grid-column-start: 1;
+  /*
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2; */
+  grid-row-end: 2; 
 
-  /* Shorthand above and below line are same */
-  /* grid-column: 1 / 3; */
-  /* grid-row: 1 / 2; */
+  Shorthand above and below line are same 
+  
+  grid-column: 1 / 3; 
+  grid-row: 1 / 2; 
 
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 1;
+  Shorthand above and below line are same 
+
+  Row Start / Col Start / Row End / Col End
+  grid-area: 1 / 1 /2 /3;
+
+  */
+
+  /* Use this only it easy to understand */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-.item-7 {
+.item-5 {
+  grid-row: 2 / 3;
   grid-column: 1 / 3;
-  grid-row: 2 / 2;
+}
+.item-4 {
+  grid-row: 3 / 3;
+  grid-column: 1 / -1;
+  /* if u want u r grid to cover all the space then use -1 if u put a random huge number then that many grid will be created. */
 }
