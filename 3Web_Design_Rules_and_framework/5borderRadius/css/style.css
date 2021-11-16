@@ -54,8 +54,9 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  border-radius: 100px;
   display: inline-block;
+  /* if our button is not a perfect square then use a big value like below else use 50% */
+  border-radius: 100px;
 }
 .btn:hover,
 .btn:active {
