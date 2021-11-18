@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input tag</title>
+  </head>
+  <body>
+    <form id="myform" action="server1.html">
+      Name: <input type="text" name="username" disabled /> <br />
+      Email: <input type="email" name="usermail" autofocus /> <br />
+      <input type="file" accept="audio/*" /> <br />
+      Fruits : <input list="fruits" >  
+      <datalist id="fruits">
+          <option value="Banana"></option>
+          <option value="apple"></option>
+          <option value="orange"></option>
+      </datalist>
+      <input type="submit" value="SUBMIT" />
+      <input type="submit" value="submit to server" formaction="server2.html" />
+    </form>
+    <!-- Mob: <input type="tel" form="myform" /> <br /> -->
+  </body>
+</html>
+<!--type="file" accept="audio/*" it will only accept the audio file smae for video file  and image file and -->
+<!-- Attributes -->
+<!-- 1.autofocus as soon we go toh the page that protion will be autofocus where we used this attribute  -->
+<!-- 2.disable as soon we go toh the page that protion will be disabled we cannot use that  -->
+<!-- 3.To Link one form with other input area the id of form should be entered in the input form"idfothatformtolink" -->
+<!-- 4. formaction="server2.html" to submit that form in another page -->
+<!-- 5. method for from post or get method -->
+<!-- 6. to link the list input list="name"  this name should be same in the id of the data list-->

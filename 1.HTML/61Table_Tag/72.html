@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table tag</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid green;
+        border-spacing: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.No</th>
+          <th>Item</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Mobile</td>
+          <td>25000</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>charger</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>headphone</td>
+          <td rowspan="2">750</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>handsfree</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <td>27500</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- this thead,tbody,tfoot only helps the browser to get which is heead and foot and body nothinh else -->
+<!-- th we can higlit that part -->
+<!-- rowspan ="2"  it will merger two row -->
+<!-- colspan ="2"  it will merger two col -->

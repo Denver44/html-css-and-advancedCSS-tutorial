@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input tag</title>
+  </head>
+  <body>
+    <form id="myform">
+      Name:
+      <input
+        type="text"
+        name="username"
+        maxlength="10"
+        placeholder="Enter you name"
+        required
+        size="25"
+      />
+      <br />
+      Email:
+      <input type="email" name="usermail" readonly value="only for read" />
+      <br />
+      <input type="file" multiple />
+      books: <input type="number" step="5" />
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </body>
+</html>
+<!-- Attributes -->
+<!-- 1. maxlength so then we can enter only that many character which we specifies in the maxlength -->
+<!-- 2. multiple to choose multiple file in one time-->
+<!-- 3. placeholder at time we reload the page there will be some written text-->
+<!-- 4. readonly we can only read no change can be made -->
+<!-- 5. required without filling that inout u cannot submitt the form -->
+<!-- 6. size it will increase the size of the input text -->
+<!-- 7. step it will make the double if 5 then 1- 15 20 like this -->
