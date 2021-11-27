@@ -24,6 +24,11 @@ html {
 
 header {
   height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../Images/hero.jpg");
+  background-size: cover;
+  color: #fff;
 }
 
 nav {
@@ -32,12 +37,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
+  padding-top: 32px;
 }
 
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 p {
@@ -66,4 +72,18 @@ h2 {
 section {
   padding: 96px 0;
   background-color: #f7f7f7;
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  /* In relative to PARENT SIZE */
+  left: 50%;
+  top: 50%;
+  /* In relative to ELEMENT SIZE */
+  transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+  width: 50%;
 }
