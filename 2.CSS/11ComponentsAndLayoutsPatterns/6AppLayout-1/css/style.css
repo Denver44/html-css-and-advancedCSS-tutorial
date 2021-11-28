@@ -33,18 +33,53 @@ menu {
   background-color: #7048e8;
   color: #fff;
   grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
 }
 aside {
-  background-color: #e9ecef;
-}
-section {
   background-color: #e9ecef;
 }
 
 nav,
-menu,
 section,
 main,
 aside {
   padding-top: 24px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #5f3dc4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+  /* margin: 0 12px; */
+}
+
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
+
+section {
+  background-color: #e9ecef;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: scroll;
+}
+
+.email {
+  flex-shrink: 0;
+  background-color: #adb5bd;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
