@@ -6,7 +6,7 @@
 
 .container {
   /* Using display Flex the container become flex and the elements inside it become flex-items */
-  width: 900px;
+  width: 50vw;
   background-color: gray;
   display: flex;
   align-items: center;
@@ -14,6 +14,7 @@
   align-items: flex-end;
   align-items: flex-start; 
   align-items: stretch;
+  align-items: baseline;
   */
 
   justify-content: center;
@@ -47,6 +48,7 @@
 
 .item-1 {
   background-color: red;
+  font-size: 28px;
 }
 .item-2 {
   background-color: green;
@@ -63,6 +65,7 @@
 }
 .item-6 {
   background-color: gold;
+  font-size: 40px;
 }
 .item-7 {
   background-color: black;
