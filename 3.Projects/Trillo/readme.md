@@ -1,1 +1,0 @@
-#### To run the scss compile just type gulp in command line
