@@ -1,0 +1,84 @@
+// VARIABLES
+// Variables always start with $ sign that's how sass will find out that is a variable.
+$color-primary: #f9ed69; // Yellow Color
+$color-secondary: #f08a5d; // Orange Color
+$color-tertiary: #b83b5e; // Pink Color
+$color-text-dark: #333; // Pink Color
+$width-button: 150px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+  text-align: center;
+
+  //   Here li is the element in the navigation which don't want & if we add the it will be like naviagtionli
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    // This & replace it with up till the path here. which .navigation li
+    &:first-child {
+      margin: 0;
+    }
+
+    a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+    }
+  }
+}
+
+.button {
+  float: right;
+}
+
+.btn-main:link,
+.btn-hot:link {
+  padding: 8px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: $width-button;
+}
+
+.btn-main {
+  color: white;
+
+  &:link {
+    background-color: $color-secondary;
+  }
+  //   This way we can give Function like darken and lighten
+  &:hover {
+    background-color: darken($color-secondary, 15%);
+  }
+}
+
+.btn-hot {
+  color: white;
+  &:link {
+    background-color: $color-tertiary;
+  }
+  &:hover {
+    background-color: lighten($color-tertiary, 5%);
+    color: darken(#fff, 15%);
+  }
+}
