@@ -1,15 +1,14 @@
 {
-  "name": "1Variables_and_Nesting",
+  "name": "sass-tutorial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass sass/main.scss css/main.css -w "
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^6.0.1"
+  "devDependencies": {
+    "node-sass": "^5.0.0"
   }
 }
