@@ -9,12 +9,12 @@
   height: 600px;
   display: grid;
   grid-template-areas:
-    'header  header  header  header'
+    '.  header  header  .'
     'section section section aside'
     'footer footer footer footer';
 
   grid-template-rows: 50px 1fr 50px;
-  grid-template-columns: 75% 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
