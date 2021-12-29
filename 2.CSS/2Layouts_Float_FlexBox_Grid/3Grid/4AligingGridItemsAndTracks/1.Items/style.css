@@ -6,9 +6,9 @@
 
 .container {
   border: 1px solid black;
-  background-color: black;
+  background-color: lightblue;
   font-size: 20px;
-  margin: 40px;
+  margin: 10px;
 
   display: grid;
   grid-template-columns: 125px 200px 125px;
@@ -16,23 +16,20 @@
   gap: 10px;
 
   /* Horizontally  */
-  /* justify-content: space-around; */
-  /* justify-content: space-between; */
-  /* justify-content: space-evenly; */
-  justify-content: center;
+  justify-items: stretch; /* Default */
+  /* justify-items: center;  */
+  /* justify-items: start; */
+  /* justify-items: end; */
 
   /* Vertically */
-  /* align-content: space-around; */
-  /* align-content: space-evenly; */
-  /* align-content: space-between; */
-  align-content: center;
-
-  /* Item will be set center */
-  align-items: center;
-  justify-items: center;
+  align-items: stretch; /* Default */
+  /* align-items: center;  */
+  /* align-items: start; */
+  /* align-items: end; */
 }
 
 .item-2 {
+  /* It will overwrite the align-item or justify-item */
   /* align-self: end; */
   /* align-self: start; */
   align-self: center;
@@ -69,5 +66,7 @@
 
 .box-model {
   display: grid;
-  grid-template-columns: 700px 400px;
+  grid-template-rows: 800px 1fr;
+  grid-template-columns: 1000px 400px;
+  grid-gap: 10px;
 }
