@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^5.0.0"
+  "dev": {
+    "node-sass": "@latest"
   }
 }
